@@ -1,7 +1,9 @@
+<div class = "container text-center">
 <h1>All Articles</h1>
 <ul id = "articles">
 <% @articles.each do |article| %>
 <li><%= link_to article.title, article_path(article), class: 'article_title' %><li>
 <% end %>
 </ul>
-<%= link_to "Create a New article", new_article_path, class: 'new_article' %>
+<%= link_to "Create a New article", new_article_path, class: 'btn btn-primary' %>
+</div>

@@ -1,3 +1,4 @@
+
 <%= form_for(@article) do |f|%>
 <ul>
 <% @article.errors.full_messages.each do |error|%>
@@ -6,13 +7,17 @@
 </ul>
 <p>
 <%= f.label :title %><br>
-<%= f.text_field :title %>
+<%= f.text_field :title, class: 'form-control' %>
 </p>
 <p>
 <%= f.label :body %><br>
-<%= f.text_area :body %>
+<%= f.text_area :body, class: 'form-control form-control-lg' %>
 </p>
 <p>
-<%= f.submit %>
+<%= f.submit "Submit an article", class: "btn btn-primary" %>
+</p>
+<p>
+  <%= f.label :tag_list %><br />
+  <%= f.text_field :tag_list %>
 </p>
 <% end %>
