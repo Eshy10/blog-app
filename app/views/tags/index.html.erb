@@ -4,7 +4,9 @@
 <% @tags.each do |tag| %>
 <li>
 <%= link_to tag.name, tag_path(tag), class: 'article_title' %>
+<% if logged_in? %>
 <%= button_to "Delete a Tag", tag_path(tag), method: :delete, data: { confirm: "Are you sure, you want to delete this tag?"}, class: 'btn btn-danger' %>
+<% end %>
 </li>
 <% end %>
 </ul>

@@ -12,9 +12,17 @@
   <body>
   <%= render 'layouts/header' %>
   <p class = "flash"><%= flash.notice %></p>
-  <div class="container">
+  <div class="container text-center">
     <%= yield %>
+    <hr>
+    <h6>
+    <% if logged_in? %>
+    <%= "Logged in as user #{current_user.email}" %>
+    <%= link_to "Logout", logout_path, class: "btn btn-primary" %>
+    <% else %>
+    <%= link_to "Fill the form above to Login", login_path, class: "btn btn-primary" %>
+    <% end %>
+    </h6>
     </div>
-    <%= render 'layouts/footer' %>
   </body>
 </html>
