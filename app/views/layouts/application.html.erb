@@ -5,11 +5,24 @@
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_pack_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
+  <%= render 'layouts/header' %>
+  <p class = "flash"><%= flash.notice %></p>
+  <div class="container text-center">
     <%= yield %>
+    <hr>
+    <h6>
+    <% if logged_in? %>
+    <%= "Logged in as user #{current_user.email}" %>
+    <%= link_to "Logout", logout_path, class: "btn btn-primary" %>
+    <% else %>
+    <%= link_to "Fill the form above to Login", login_path, class: "btn btn-primary" %>
+    <% end %>
+    </h6>
+    </div>
   </body>
 </html>

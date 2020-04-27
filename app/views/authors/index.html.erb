@@ -1,0 +1,18 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Authors</h1>
+  <div class = "container jumbotron text-center">
+    <% @authors.each do |author| %>
+      <ul>
+        <li class = "mr-3"><strong>username:</strong> <%= author.username %></li>
+        <li class = "mr-3"><strong>email:</strong> <%= author.email %></li>
+        <li><%= author.password %></li>
+        <li><%= author.password_confirmation %></li>
+        <li><%= author.password %></li>
+        <li class = "mr-3"><%= link_to 'Show', author %></li>
+        <li class = "mr-3"><%= link_to 'Edit', edit_author_path(author) %></li>
+        <li class = "mr-3"><%= link_to 'Destroy', author, method: :delete, data: { confirm: 'Are you sure?' } %></li>
+      </ul>
+    <% end %>
+    <%= link_to 'New Author', new_author_path, class: "btn btn-primary" %>
+  </div>
