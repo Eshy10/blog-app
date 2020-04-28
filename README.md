@@ -2,10 +2,6 @@
  
 This a ruby on rails blog application that consist of a blog post, comments, tags and allows the user to upload an image(only authenticated users). The project is from the jumpstart labs rails tutorial.
 
-## Live Version
-
-<a href="https://safe-scrubland-28001.herokuapp.com/">Demo link</a>
-
 ## Prerequisites
 
 - Ruby > 2.5
