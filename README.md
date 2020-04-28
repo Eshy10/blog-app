@@ -1,24 +1,42 @@
-# README
+# Blog App
+ 
+This a ruby on rails blog application that consist of a blog post, comments, tags and allows the user to upload an image(only authenticated users). The project is from the jumpstart labs rails tutorial.
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Live Version
 
-Things you may want to cover:
+<a href="https://safe-scrubland-28001.herokuapp.com/">Demo link</a>
 
-* Ruby version
+## Prerequisites
 
-* System dependencies
+- Ruby > 2.5
+- Ruby on Rails > 5.2
 
-* Configuration
+## Built With
 
-* Database creation
+- Ruby
+- Ruby on Rails
+- Bootstrap
 
-* Database initialization
+## Setup
 
-* How to run the test suite
+- Clone the repository on your local machine
+- cd into the folder
+- run bundle install
+- run rails server
+- open a new tab in your browser and enter localhost:3000
 
-* Services (job queues, cache servers, search engines, etc.)
+## Author
 
-* Deployment instructions
+👤 Adewale Adeshola
 
-* ...
+- Github: [@githubhandle](https://github.com/Eshy10)
+- Twitter: [@twitterhandle](https://twitter.com/AdesholaAdewal6?s=09)
+- Linkedin: [linkedin](https://www.linkedin.com/in/adewale-adeshola-b0b581139/)
+
+## Show your support
+
+Give a ⭐️ if you like this project!
+
+## Acknowledgments
+
+- Hat tip to <a href="https://microverse.org/">Microverse</a>
