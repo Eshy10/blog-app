@@ -1,0 +1,29 @@
+@import "bootstrap";
+@import url('https://fonts.googleapis.com/css?family=Merriweather:400,700');
+
+body {
+    background-color: thistle;
+}
+
+#logo {
+    color: snow;
+    font-weight: bold;
+    padding: 1em;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.article_title {
+    padding: 2em;
+}
+
+h1 {
+    font-weight: bold;
+}
+.button-danger {
+    margin-bottom: 1em;
+ }
